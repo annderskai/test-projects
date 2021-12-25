@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестовое задание CCS</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-nav">
+            <div class="wrapper">
+                <div class="header-nav__wrapper">
+                    <div class="logo">
+                        <a class="logo__link" href="#">LoremIpsum.<span class="span-color">Net</span></a>
+                    </div>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a class="menu__link menu__link--active" href="#">Бизнес</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__link" href="#">О нас</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__link" href="#">Цены</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__link" href="#">Оформить заказ</a>
+                            </li>
+                        </ul>
+                        <button class="menu__hamburger content__span-input" for="hamburger" id="hamnav">
+                        <span class="menuIcon">&#9776;</span>
+                        <span class="closeIcon">&#xD7;</span>
+                        </button>
+                        <input type="checkbox" id="hamburger"/>
+                    </nav>
+                </div>
+            </div> <!-- /wrapper -->
+        </div> <!-- /header-nav -->
+        
+        <section class="header__content">
+            <div class="header__content-img"></div>
+                <div class="wrapper">
+                <div class="header__content-wrapper">
+                    <!-- === TODO: upercase modif === -->
+                    <h1 class="header__content-title"><span class="span-color">Lorem ipsum</span> dolor sit ametconsectetur <span class="span-color">adipiscing</span></h1>
+
+                    <div class="header__content-div">
+                        <p class="header__content-description">At vero eos et accusamus et iusto odio dignissimos ducimus!</p>
+                        <ul class="header__list">
+                            <li class="header__list-item">Totam rem aperiam eaque ipsa</li>
+                            <li class="header__list-item">Sit voluptatem accusantium doloremque laudantium</li>
+                            <li class="header__list-item">Sed ut perspiciatis, unde omnis iste natus error</li>
+                        </ul>
+                    </div>
+
+                    <div class="header__button-div">
+                        <button class="button" type="button"><span class="header__btn-span">заказать</span></button>
+                        <button class="button button--white" type="button"><span class="header__btn-span">подробнее</span></button>
+                    </div>
+                </div> <!-- /header__content-wrapper -->
+                </div>
+             <!-- /container -->
+        </section> <!-- /img-content -->
+    </header>
+    
+    <main class="content">
+        <div class="content__img-wrapper">
+        <div class="wrapper">
+            <div class="content__title">Оформление <span class="span-color">Заказа</span></div>
+                <p class="content__p">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+                
+                <div class="content__circles">
+                   <!-- /circle block 1 -->
+                    <div class="content__circle-block">
+                        <div class="content__circle">
+                            <img class="content__circle-img" src="./img/circle-search.svg" alt="">
+                        </div>
+                        <p class="content__circle-text">Lorem ipsum dolor sit amet</p>
+                    </div>
+                    <!-- /circle block 2 -->
+                    <div class="content__circle-block">
+                        <div class="content__circle content__circle--no-dots--2">
+                            <img class="content__circle-img" src="./img/circle-percent.svg" alt="">
+                        </div>
+                        <p class="content__circle-text">Сonsecteturadipiscing elit</p>
+                    </div>
+                    <!-- /circle block 3 -->
+                    <div class="content__circle-block">
+                        <div class="content__circle content__circle--no-dots--3">
+                            <img class="content__circle-img" src="./img/circle-page.svg" alt="">
+                        </div>
+                        <p class="content__circle-text">Sed do eiusmod tempor</p>
+                    </div>
+                    <!-- /circle block 4 -->
+                    <div class="content__circle-block">
+                        <div class="content__circle content__circle--no-dots--4">
+                            <img class="content__circle-img" src="./img/circle-letter.svg" alt="">
+                        </div>
+                        <p class="content__circle-text">Esse cillum dolore eu fugiat</p>
+                    </div>
+                    <!-- /circle block 5 -->
+                    <div class="content__circle-block">
+                        <div class="content__circle content__circle--no-dots--5">
+                            <img class="content__circle-img" src="./img/circle-bill.svg" alt="">
+                        </div>
+                        <p class="content__circle-text">Excepteur sint occaecat cupidatat non proident</p>
+                    </div>
+                </div> <!-- /content__circles -->
+                
+                <form class="content__form">
+                    <div class="content__form-input">
+                        <select class="content__input content__select" name="Тип-системы" id="system-type" required>
+                            <option value="" disabled selected hidden>Выберите тип системы</option>
+                            <option value="1">Sed ut perspiciatis</option>
+                            <option value="2">Nemo enim ipsam</option>
+                            <option value="3">Et harum quidem</option>
+                            <option value="4">Temporibus autem</option>
+                            <option value="5">Itaque earum rerum</option>
+                            <option value="6">Excepteur sint occaecat</option>
+                            <option value="7">Cupidatat non proident</option>
+                        </select>
+                        <input class="content__input" type="text" name="e-mail" placeholder="Ваш e-mail" required>
+                        <input class="content__input" type="text" name="name" placeholder="Ваше имя" required>
+                    </div>
+                    
+                    <div class="content__form-input content__form-input--margin">
+                        <div class="content__slider-wrap">
+                            <div class="content__slider-text">
+                                <p>Sed ut perspiciatis, unde omnis iste natus</p>
+                                <p class="content__slider-num"><output id="num">50</output> %</p>
+                            </div>
+                            <input class="content__slider" id="myRange" name="myRange" type="range" min="1" max="100" oninput="num.value = this.value">
+                        </div>
+                        <div class="content__input-file ">
+                            <input type="file" name="files" id="files" style="display: none">
+                            <label class="button button--big content__input--white" for="files"><span class="content__span-input">Прикрепить файл</span></label>
+                        </div>
+                    </div>
+                    <div class="content__form-btn">
+                        <button class="button button--big" type="submit"><span class="content__span-submit">Отправить</span></button>
+                    </div>
+                </form>
+             </div><!-- /content__img -->
+        </div> <!-- /wrapper -->
+    </main>
+    
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="wrapper footer__wrapper-flex"> <!-- === TODO: insert icons === -->
+                <div class="footer__copyright">© 2018 «LOREMIPSUM.NET» Все права защищены.</div>
+                <img class="footer__icon-stick" src="./img/footer-stick.svg" alt="">
+                <div class="footer__elements">
+                    <div class="footer__element">
+                        <img class="footer__icon" src="./img/icon-qiwi.svg" alt="">
+                        <p class="footer__system-name footer--text-color">QIWI wallet</p>
+                    </div>
+                    <div class="footer__element">
+                        <img class="footer__icon" src="./img/icon-yandexmoney.svg" alt="">
+                        <p class="footer__system-name footer--text-color">Yandex Money</p>
+                    </div>
+                    <div class="footer__element">
+                        <img class="footer__icon" src="./img/icon-webmoney.svg" alt="">
+                        <p class="footer__system-name footer--text-color">Web Money</p>
+                    </div>
+                </div>
+                <img class="footer__icon-stick" src="./img/footer-stick.svg" alt="">
+                <div class="footer__elements">
+                    <div class="footer__element">
+                        <img class="footer__icon" src="./img/icon-email.svg" alt="">
+                        <a class="footer__contacts-link" href="mailto:info@ipsum228.com">info@ipsum228.com</a>
+                    </div>
+                    <div class="footer__element">
+                        <img class="footer__icon" src="./img/icon-vk.svg" alt="">
+                        <a class="footer__contacts-link" href="#">Мы вконтакте</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>
